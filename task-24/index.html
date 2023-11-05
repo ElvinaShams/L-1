@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <main class="main none">
+      <div class="toggle">
+        <input type="radio" id="none" name="contact" value="email" checked/>
+        <label for="none">По-умолчанию</label>
+    
+        <input type="radio" id="asc" name="contact" value="phone" />
+        <label for="asc">По-возрастанию</label>
+    
+        <input type="radio" id="desc" name="contact" value="mail" />
+        <label for="desc">По-убыванию</label>
+      </div>
+      <div class="pagination pagination-header"></div>
+    
+      <div class="wrapper">
+
+        <div class="fname table">
+          <h2>Фамилия</h2>
+          <ul class="list_fname" id="fname"></ul>
+        </div>
+        <div class="name table">
+          <h2>Имя</h2>
+          <ul class="list_name" id="lname"></ul>
+        </div>
+
+        <div class="tel table">
+          <h2>Телефон</h2>
+          <ul class="list_tel" id="tel"></ul>
+        </div>
+
+        <div class="address table">
+          <h2>Адрес</h2>
+          <ul class="list_adress" id="address"></ul>
+        </div>
+
+        <div class="city table">
+          <h2>Город</h2>
+          <ul class="list_city" id="city"></ul>
+        </div>
+
+        <div class="state table">
+          <h2>Статус</h2>
+          <ul class="list_state" id="state"></ul>
+        </div>
+
+        <div class="zip table">
+          <h2>ZIP-коды</h2>
+          <ul class="list_zip" id="zip"></ul>
+        </div>
+      </div>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="main">
+      <div class="wrapper">
+        <h1>Введите пароль:</h1>
+        <div class="input__wrapper">
+          <input class="input" type="text" placeholder="Введите  пароль" />
+          <button class="clear">&times;</button>
+        </div>
+        <div class="list__wrapper">
+          <p id="letter" class="invalid">Добавьте строчные буквы</p>
+          <p id="capital" class="invalid">Добавьте заглавные буквы</p>
+          <p id="number" class="invalid">Добавьте числа в пароль</p>
+          <p id="length" class="invalid">Недостаточное колличество символов. Советуем не меньше 8 символов</b></p>
+        </div>
+      </div>
+    </main>
+    <script src="./script.js"></script>
+  </body>
+</html>

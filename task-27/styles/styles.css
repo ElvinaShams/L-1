@@ -1,0 +1,78 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 20px auto;
+}
+.site-header {
+  border: 1px solid #c0c0c0;
+  padding: 10px;
+  margin-bottom: 30px;
+  position: relative;
+  overflow: hidden;
+}
+
+.site-header h1 {
+  font-size: 4rem;
+  position: relative;
+  color: #c0c0c0;
+}
+
+.site-header--bg {
+  background: url("../image/imgreliz.jpg");
+  background-size: cover;
+  background-position-x: 50%;
+  background-position-y: -148%;
+  background-repeat: no-repeat;
+  animation-name: header-animation;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes header-animation {
+  0% {
+    background-position-y: -148%;
+  }
+  100% {
+    background-position-y: 50%;
+  }
+}
+
+.spider {
+  width: 90px;
+  height: 245px;
+  position: absolute;
+  background: url("../image/spider.png");
+  top: -265px;
+  left: 315px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.spider-animation {
+  animation-name: header-animation-spider;
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes header-animation-spider {
+  0% {
+    top: -265px;
+  }
+  60% {
+    top: -70px;
+  }
+  70% {
+    top: -130px;
+  }
+  80% {
+    top: -100px;
+  }
+  100% {
+    top: -110px;
+  }
+}
